@@ -1,0 +1,153 @@
+Last login: Wed Jul 13 15:19:57 on ttys002
+juansbons@JuansBonss-MacBook-Air ~ % pwd
+/Users/juansbons
+juansbons@JuansBonss-MacBook-Air ~ % cd documents/coding-responsive-websites/divs-flexbox-starter
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/juansbons/Documents/coding-responsive-websites/divs-flexbox-starter/.git/
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git add -A
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git commit -m "Initial commit"
+[master (root-commit) 2471490] Initial commit
+ 28 files changed, 2416 insertions(+)
+ create mode 100644 .vscode/settings.json
+ create mode 100755 404.html
+ create mode 100755 LICENSE.txt
+ create mode 100755 apple-touch-icon.png
+ create mode 100755 browserconfig.xml
+ create mode 100755 crossdomain.xml
+ create mode 100755 css/main.css
+ create mode 100755 css/normalize.css
+ create mode 100755 doc/TOC.md
+ create mode 100755 doc/css.md
+ create mode 100755 doc/extend.md
+ create mode 100755 doc/faq.md
+ create mode 100755 doc/html.md
+ create mode 100755 doc/js.md
+ create mode 100755 doc/misc.md
+ create mode 100755 doc/usage.md
+ create mode 100755 favicon.ico
+ create mode 100755 humans.txt
+ create mode 100755 img/.gitignore
+ create mode 100755 img/bkgd.jpg
+ create mode 100755 index.html
+ create mode 100755 js/main.js
+ create mode 100755 js/plugins.js
+ create mode 100755 js/vendor/jquery-1.11.3.min.js
+ create mode 100755 js/vendor/modernizr-2.8.3.min.js
+ create mode 100755 robots.txt
+ create mode 100755 tile-wide.png
+ create mode 100755 tile.png
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git remote add origin git@github.com:juanmatthew/divs-flexbox-starter.git
+git branch -M main
+git push -u origin main
+Enter passphrase for key '/Users/juansbons/.ssh/id_rsa': 
+Enumerating objects: 35, done.
+Counting objects: 100% (35/35), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (35/35), 962.34 KiB | 11.59 MiB/s, done.
+Total 35 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:juanmatthew/divs-flexbox-starter.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % touch .gitignore
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git add .gitignore
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git commit -m "Added .gitignore"
+[main 5673cd5] Added .gitignore
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git push origin main
+Enter passphrase for key '/Users/juansbons/.ssh/id_rsa': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:juanmatthew/divs-flexbox-starter.git
+   2471490..5673cd5  main -> main
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git add .gitignore
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git commit -m "Uploaded incorrect .gitignore file"
+[main e6da31b] Uploaded incorrect .gitignore file
+ 1 file changed, 2 insertions(+)
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git push origin main
+Enter passphrase for key '/Users/juansbons/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:juanmatthew/divs-flexbox-starter.git
+   5673cd5..e6da31b  main -> main
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git log
+commit e6da31b83cab438a14da9c7e15890bb361bc74ad (HEAD -> main, origin/main)
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:48:22 2022 -0400
+
+    Uploaded incorrect .gitignore file
+
+commit 5673cd56a3406ca6de7f2d3381225076bc3d4a7e
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:46:02 2022 -0400
+
+    Added .gitignore
+
+commit 24714908fdb8ee8015fb1baf10b0c3be082c58b7
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:43:07 2022 -0400
+
+    Initial commit
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git commit --amend -m "Uploaded correct .gitignore file because previous one was blank"
+[main e2f0ae6] Uploaded correct .gitignore file because previous one was blank
+ Date: Wed Jul 13 17:48:22 2022 -0400
+ 1 file changed, 2 insertions(+)
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git log
+commit e2f0ae6256622d2f22abbd0aeb55f5ae056d3bee (HEAD -> main)
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:48:22 2022 -0400
+
+    Uploaded correct .gitignore file because previous one was blank
+
+commit 5673cd56a3406ca6de7f2d3381225076bc3d4a7e
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:46:02 2022 -0400
+
+    Added .gitignore
+
+commit 24714908fdb8ee8015fb1baf10b0c3be082c58b7
+Author: juanmatthew <101286477+JuaniMatthew@users.noreply.github.com>
+Date:   Wed Jul 13 17:43:07 2022 -0400
+
+    Initial commit
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % git push origin main
+Enter passphrase for key '/Users/juansbons/.ssh/id_rsa': 
+To github.com:juanmatthew/divs-flexbox-starter.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:juanmatthew/divs-flexbox-starter.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+juansbons@JuansBonss-MacBook-Air divs-flexbox-starter % 
